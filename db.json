@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to the Blog!",
+      "author": "Admin",
+      "content": " My blog post."
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Tips",
+      "author": "Yussuf",
+      "content": "Always keep your code clean and readable."
+    }
+  ]
+}

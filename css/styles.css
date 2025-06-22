@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  /* background-color: #f4f4f4; */
+  color: #333;;
+  background-image: url("/assets/Red%20Exclusive%20screen%20%20Full%20ƜΛŁŁ%20%20ᴿᴿRalgory©.jpeg");
+
+ 
+}
+
+h1, h2 {
+  color: #005f73;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+}
+
+#post-list {
+  width: 30%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#post-detail {
+  width: 70%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#post-list div {
+  padding: 8px;
+  margin-bottom: 6px;
+  background-color: #e0f7fa;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#post-list div:hover {
+  background-color: #b2ebf2;
+}
+
+form {
+  margin-top: 30px;
+  background-color:#ffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #0097a7;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #007c91;
+}
+
+.hidden {
+  display: none;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-button {
+  background-color: #410719;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #007c91;
+}
+
+.secondary-button {
+  background-color: #ccc;
+  color: #333;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #999;
+}
+
+/* === Responsive tweaks for better mobile experience (optional) === */
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+
+  #post-list,
+  #post-detail {
+    width: 100%;
+  }
+}
+
+/* === Smooth transition for edit form visibility === */
+#edit-post-form {
+  transition: all 0.3s ease-in-out;
+}
+
+#edit-post-form:not(.hidden) {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* === Optional animation === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
